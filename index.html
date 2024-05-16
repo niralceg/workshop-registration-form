@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="./temp/button.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
+      #slogan {
+        animation-play-state: paused;
+      }
+      #slogan:hover {
+        animation: blink 0.1s infinite;
+      }
       #titleTxt:hover {
         color: rgba(202, 202, 202, 0.525);
         /* text-shadow: 1px 1px 1px white;  */
@@ -48,6 +54,21 @@
         display: none !important;
         /* height: 0px;
         width: 0px; */
+      }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      #timer:hover{
+        opacity: 0.5;
+        transition: opacity 0.5s ease-in-out;
       }
     </style>
     <script></script>
